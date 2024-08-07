@@ -274,7 +274,7 @@ float BadmintonCourtModel::fitNet(const std::vector<Line>& lines, const cv::Mat&
       // Check if this line is sufficiently above the middle line
       double xmid = (transformedModelPoints[14].x + transformedModelPoints[15].x) / 2.;
       // Bound net between 5% and and 40% of the screen 
-      double pixThreshLow = 0.05 * binaryImage.rows, pixThreshHigh = 0.2 * binaryImage.rows;
+      double pixThreshLow = 0.05 * binaryImage.rows, pixThreshHigh = 0.4 * binaryImage.rows;
       if (!excluded && line.evaluateByX(xmid) < middleLine.evaluateByX(xmid) - pixThreshLow &&
           line.evaluateByX(xmid) > middleLine.evaluateByX(xmid) - pixThreshHigh) {
         filteredLines.push_back(line);

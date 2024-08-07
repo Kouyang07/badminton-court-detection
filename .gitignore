@@ -119,11 +119,3 @@ cmake-build-*/
 *.ipr
 *.iws
 .idea/
-
-# CMake
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-build/

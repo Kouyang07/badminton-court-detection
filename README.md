@@ -33,28 +33,31 @@ Usage: ./build/bin/detect video_path [output_path]
 The output file contains one point per line in standard CSV format.  The points are in the following order:
 
 ```
-P1 - Upper Base Line (left) and Left Service Line
-P2 - Upper Base Line (right) and Right Service Line
-P3 - Back Line (right) and Right Service Line
-P4 - Back Line (left) and Left Service Line
-P5 - Upper Base Line (center) and Center Line
-P6 - Upper Base Line (center) and Net Line
-P7 - Back Line (center) and Center Line
-P8 - Back Line (center) and Net Line
-P9 - Left Service Line and Net Line
-P10 - Right Service Line and Net Line
-P11 - Center Line and Net Line
-P12 - Back Line and Doubles Line
-P13 - Upper Base Line and Singles Line (left)
-P14 - Upper Base Line and Singles Line (right)
-P17 - Left Service Line and Singles Line
-P18 - Right Service Line and Singles Line
-P19 - Left Service Line and Doubles Line
-P20 - Right Service Line and Doubles Line
-P21 - Singles Line (left) and Net Line
-P22 - Singles Line (right) and Net Line
-Netpole1 - Net pole point
-Netpole2 - Second net pole point
+P1: Intersection of upper baseline and left sideline
+P2: Intersection of lower baseline and left sideline
+P3: Intersection of lower baseline and right sideline
+P4: Intersection of upper baseline and right sideline
+P5: Intersection of upper baseline and left singles line
+P6: Intersection of lower baseline and left singles line
+P7: Intersection of lower baseline and right singles line
+P8: Intersection of upper baseline and right singles line
+P9: Intersection of left sideline and upper service line
+P10: Intersection of right sideline and upper service line
+P11: Intersection of left sideline and lower service line
+P12: Intersection of right sideline and lower service line
+P13: Intersection of upper service line and center service line
+P14: Intersection of lower service line and center service line
+P15: Intersection of left sideline and net line
+P16: Intersection of right sideline and net line
+P17: Intersection of left sideline and upper doubles line
+P18: Intersection of right sideline and upper doubles line
+P19: Intersection of left sideline and lower doubles line
+P20: Intersection of right sideline and lower doubles line
+P21: Intersection of upper baseline and center service line
+P22: Intersection of lower baseline and center service line
+Additionally, the output includes two net pole positions:
+NetPole1: Left net pole position
+NetPole2: Right net pole position
 ```
 
 ## Acknowledgements
